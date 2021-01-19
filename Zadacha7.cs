@@ -10,9 +10,9 @@ namespace ConsoleApp11
     {
         static void Main(string[] args)
         {
-            string[] Array = new string[] { "13", "5", "32", "0", "4", "19", "23", "22", "52" };
-            int[] IntArray = Array.Select(int.Parse).Where(n => n % 2 == 0).OrderByDescending(n => n).ToArray();
-            Console.WriteLine(String.Join(", ", IntArray));
+            string[] array = new string[] { "13", "5", "32", "0", "4", "19", "23", "22", "52" };
+            int[] intArray = array.Select(int.Parse).Where(n => n % 2 == 0).OrderByDescending(n => n).ToArray();
+            Console.WriteLine(String.Join(", ", intArray));
         }
     }
 }
